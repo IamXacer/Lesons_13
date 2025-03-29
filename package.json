@@ -1,9 +1,12 @@
 {
   "name": "todolist-13",
   "private": true,
+  "homepage": "https://Iamxacer.github.io/todolist-13/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "vite --port 3000",
     "dev": "vite --port 3000",
     "build": "tsc -b && vite build",
